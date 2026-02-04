@@ -1,27 +1,32 @@
---Employee professions group table
+-- Employee professions group table
 CREATE TABLE IF NOT EXISTS employee_profession_groups (  
-    profession_group_id SERIAL PRIMARY KEY,
-    profession_group_name VARCHAR(100) NOT NULL UNIQUE
+    profession_group_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    profession_group_name TEXT NOT NULL UNIQUE
 );
 
---Employee professions table
+-- Employee professions table
 CREATE TABLE IF NOT EXISTS employee_professions (  
-    profession_id SERIAL PRIMARY KEY,
-    profession_name VARCHAR(100) NOT NULL UNIQUE,
-    profession_group_id INT NOT NULL,
-    FOREIGN KEY (profession_group_id) REFERENCES employee_profession_groups(profession_group_id)
+    profession_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    profession_name TEXT NOT NULL UNIQUE,
+    profession_group_id INTEGER NOT NULL,
+    FOREIGN KEY (profession_group_id)
+        REFERENCES employee_profession_groups(profession_group_id)
 );
 
---Employee Table
+-- Employee table
 CREATE TABLE IF NOT EXISTS employees (
-    employee_id SERIAL PRIMARY KEY,
-    full_name VARCHAR(200) NOT NULL,
-    profession_id INT NOT NULL,
-    profession_group_id INT NOT NULL,
-    gender VARCHAR(10),
+    employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    full_name TEXT NOT NULL,
+    profession_id INTEGER NOT NULL,
+    profession_group_id INTEGER NOT NULL,
+    gender TEXT,
     date_of_birth DATE,
     hire_date DATE,
     resignation_date DATE,
-    FOREIGN KEY (profession_id) REFERENCES employee_professions(profession_id),
-    FOREIGN KEY (profession_group_id) REFERENCES employee_profession_groups(profession_group_id)
+    FOREIGN KEY (profession_id)
+        REFERENCES employee_professions(profession_id),
+    FOREIGN KEY (profession_group_id)
+        REFERENCES employee_profession_groups(profession_group_id)
 );
+
+SELECT*from employees
