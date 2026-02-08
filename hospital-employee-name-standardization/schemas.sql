@@ -1,6 +1,6 @@
 -- Employee professions group table
 CREATE TABLE IF NOT EXISTS employee_profession_groups (  
-    profession_group_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    profession_group_id INTEGER PRIMARY KEY,
     profession_group_name TEXT NOT NULL UNIQUE
 );
 
@@ -15,10 +15,10 @@ CREATE TABLE IF NOT EXISTS employee_professions (
 
 -- Employee table
 CREATE TABLE IF NOT EXISTS employees (
-    employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    full_name TEXT NOT NULL,
-    profession_id INTEGER NOT NULL,
-    profession_group_id INTEGER NOT NULL,
+    employee_id INTEGER,
+    full_name TEXT,
+    profession_id INTEGER,
+    profession_group_id INTEGER,
     gender TEXT,
     date_of_birth DATE,
     hire_date DATE,
@@ -29,4 +29,3 @@ CREATE TABLE IF NOT EXISTS employees (
         REFERENCES employee_profession_groups(profession_group_id)
 );
 
-SELECT*from employees

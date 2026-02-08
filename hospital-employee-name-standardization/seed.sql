@@ -1,8 +1,8 @@
 -- Innsert Employee Group Data
-INSERT INTO employee_profession_groups (profession_group_name)
+INSERT INTO employee_profession_groups (profession_group_id,profession_group_name)
 VALUES
-('Medical'),
-('Non Medical');
+(1,'Medical'),
+(2,'Non Medical');
 
 -- Insert Employee Profession Data
 INSERT INTO employee_professions (profession_name, profession_group_id)
@@ -41,3 +41,6 @@ VALUES
 2. Access ./sqlite (dbname).db
 3. Type .mode csv
 4. Type .import (csvname).csv (tablename)
+**/
+
+select * from employees
