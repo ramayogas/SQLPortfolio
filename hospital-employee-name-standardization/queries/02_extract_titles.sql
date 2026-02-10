@@ -1,6 +1,21 @@
--- Name Cleaning
-SELECT TRIM(full_name) AS clean_name
-FROM employees;
+ALTER TABLE employees ADD COLUMN clean_name TEXT;
+ALTER TABLE employees ADD COLUMN title TEXT;
 
--- Split Name
-SELECT * FROM employees WHERE profession_id = 11;
+select full_name, clean_name, title from employees where profession_id = 1411
+
+UPDATE employees
+SET clean_name = TRIM(
+    CASE
+        WHEN INSTR(full_name, ',') = 0 THEN full_name
+        --Before comma
+        WHEN LENGTH(TRIM(SUBSTR(full_name,1,INSTR(full_name,',') - 1))) 
+        >
+        --After comma
+             LENGTH(TRIM(SUBSTR(full_name, INSTR(full_name,',')+1)))
+          THEN SUBSTR(full_name,1,INSTR(full_name,',') - 1)
+        ELSE SUBSTR(full_name, INSTR(full_name,',')+1)
+    END
+)
+
+
+

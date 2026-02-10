@@ -1,1 +1,1 @@
-SELECT full_name FROM employees
+SELECT full_name FROM employees_raw

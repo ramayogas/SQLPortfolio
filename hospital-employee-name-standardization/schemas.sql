@@ -13,8 +13,24 @@ CREATE TABLE IF NOT EXISTS employee_professions (
         REFERENCES employee_profession_groups(profession_group_id)
 );
 
--- Employee table
+-- Employee table, for cleaning data
 CREATE TABLE IF NOT EXISTS employees (
+    employee_id INTEGER,
+    full_name TEXT,
+    profession_id INTEGER,
+    profession_group_id INTEGER,
+    gender TEXT,
+    date_of_birth DATE,
+    hire_date DATE,
+    resignation_date DATE,
+    FOREIGN KEY (profession_id)
+        REFERENCES employee_professions(profession_id),
+    FOREIGN KEY (profession_group_id)
+        REFERENCES employee_profession_groups(profession_group_id)
+);
+
+-- Employee_raw table
+CREATE TABLE IF NOT EXISTS employees_raw (
     employee_id INTEGER,
     full_name TEXT,
     profession_id INTEGER,
