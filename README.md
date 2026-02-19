@@ -5,9 +5,7 @@ I specialize in transforming raw, messy datasets into structured, reliable insig
 Across my projects, I focus on data cleaning, transformation, analysis, and clear reporting using SQL, Python (Pandas), Excel, and visualization tools.
 
 ## About This Repository
-
 This repository focuses on SQL-based data cleaning, transformation, and structured reporting.
-
 Projects demonstrate:
 - Cleaning and standardizing inconsistent text fields
 - Handling edge cases in real-world datasets
