@@ -1,21 +1,28 @@
 ### SQL Portfolio
-Hi, I’m Rama — a SQL-focused Data Analyst passionate about transforming raw datasets into clean, structured, and actionable insights.
-This portfolio showcases projects where I applied SQL techniques for data cleaning, transformation, and reporting. Projects focus on healthcare data, employee records, and real-world business scenarios.
 
-### About
-This portfolio focuses on **SQL data wrangling and transformation**, emphasizing:
-- Cleaning and standardizing complex text fields  
-- Handling edge cases in professional titles and names  
-- Creating permanent, structured tables for reporting  
-- Combining multiple SQL functions (`SUBSTR`, `INSTR`, `TRIM`, `CAS
+Hi, I’m Yogas — a Data Analyst with a UX mindset and strong foundations in SQL and Python. 
+I specialize in transforming raw, messy datasets into structured, reliable insights that support data-driven decision-making. My background in UX design allows me to approach data from a human-centered perspective, ensuring insights are not only technically sound, but also meaningful and actionable.
+Across my projects, I focus on data cleaning, transformation, analysis, and clear reporting using SQL, Python (Pandas), Excel, and visualization tools.
+
+## About This Repository
+
+This repository focuses on SQL-based data cleaning, transformation, and structured reporting.
+
+Projects demonstrate:
+- Cleaning and standardizing inconsistent text fields
+- Handling edge cases in real-world datasets
+- Creating structured tables ready for analysis
+- Writing efficient and readable SQL queries
+- Building data outputs suitable for reporting and business use
+
+The goal is to showcase practical SQL skills applied to real-world data scenarios.
 
 ### 📂 Projects
 
 | Project | TL;DR Description | Data Source | Tools / Techniques | Snapshot |
 |---------|-----------------|------------|------------------|---------|
 | Employee Name & Title Cleaning | Cleaned employee names, separated titles, and generated final name columns for reporting purposes | Internal Employee DB | SQLite — `SUBSTR`, `INSTR`, `TRIM`, `CASE` | [View Query / Example](#) |
-| Healthcare Professionals Data Standardization | Split complex professional titles, normalized naming conventions, and prepared data for analytics dashboards | Hospital Employee Records | SQLite, SQL Logic, Data Normalization | [View Query / Example](#) |
-| Custom SQL Reports | Built reusable queries for HR reporting and analytics | Internal HR DB | SQLite, Views, Aggregations | [View Query / Example](#) |
+| tba | tba | tba | tba | [View Query / Example](#) |
 
 ---
 👤 **Author:** Rama Yogaswara  
