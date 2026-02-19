@@ -17,9 +17,9 @@ The goal is to showcase practical SQL skills applied to real-world data scenario
 
 ### 📂 Projects
 
-| Project | TL;DR Description | Data Source | Tools / Techniques | Snapshot |
+| Project | Overview | Data Source | Tools / Techniques | Output |
 |---------|-----------------|------------|------------------|---------|
-| Employee Name & Title Cleaning | Cleaned employee names, separated titles, and generated final name columns for reporting purposes | Internal Employee DB | SQLite — `SUBSTR`, `INSTR`, `TRIM`, `CASE` | [View Query / Example](#) |
+| Healthcare Staff Data Standardization | Transformed unstructured medical staff records into clean, structured datasets by extracting professional titles and standardizing name fields to enable accurate reporting and HR analytics. | Anonymized replica of a hospital staff database (realistic schema) | SQLite — String parsing, string functions, data normalization, conditional logic | [View Query / Example](#) |
 | tba | tba | tba | tba | [View Query / Example](#) |
 
 ---
