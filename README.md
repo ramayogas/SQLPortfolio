@@ -1,4 +1,4 @@
-### SQL Portfolio
+###🛢️ SQL Portfolio
 
 Hi, I’m Yogas — a Data Analyst with a UX mindset and strong foundations in SQL and Python. 
 I specialize in transforming raw, messy datasets into structured, reliable insights that support data-driven decision-making. My background in UX design allows me to approach data from a human-centered perspective, ensuring insights are not only technically sound, but also meaningful and actionable.
