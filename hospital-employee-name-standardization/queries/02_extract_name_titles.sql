@@ -78,3 +78,17 @@ SET clean_name = TRIM(
 SELECT full_name, clean_name, title FROM employees WHERE TITLE LIKE 'IR%'
 SELECT full_name, clean_name, title FROM employees WHERE profession_id = 1412
 SELECT full_name, clean_name, title, SUBSTR(title, 1, INSTR(title, " ") - 1) AS first_word , SUBSTR(title, INSTR(title, " ") + 1) AS last_word FROM employees WHERE profession_id = 1412
+
+
+-- ini udah bener, tapi masi gabisa title depan >1
+select title,
+CASE
+    WHEN title GLOB '*Prof.*' THEN 'Prof.'
+    WHEN title GLOB '*Dr.*' THEN 'Dr.'
+    WHEN title GLOB '*Ir.*' THEN 'Ir.'
+    WHEN title GLOB '*drg.*' THEN 'drg.'
+    WHEN title GLOB '*dr.*' THEN 'dr.'
+    ELSE NULL
+END AS x_title
+from employees
+where x_title IS NOT NULL
